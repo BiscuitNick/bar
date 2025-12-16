@@ -347,7 +347,7 @@ Implement the classic Snake game with smooth movement, food spawning, collision 
 ---
 pr_id: PR-008
 title: Tetris Game Tests
-cold_state: new
+cold_state: completed
 priority: medium
 complexity:
   score: 5
