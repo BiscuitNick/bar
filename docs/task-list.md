@@ -414,7 +414,7 @@ Write tests for Minesweeper game logic including board generation, mine placemen
 ---
 pr_id: PR-010
 title: Snake Game Tests
-cold_state: new
+cold_state: completed
 priority: medium
 complexity:
   score: 4
