@@ -382,7 +382,7 @@ Write comprehensive tests for Tetris game logic including piece rotation, collis
 ---
 pr_id: PR-009
 title: Minesweeper Game Tests
-cold_state: new
+cold_state: completed
 priority: medium
 complexity:
   score: 4
