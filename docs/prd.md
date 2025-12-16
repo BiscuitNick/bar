@@ -1,0 +1,1 @@
+make next.js 16 app, shadcn/ui, tailwind4, light/dark layout, homepage includes games: tetris, minesweeper, snake. 
