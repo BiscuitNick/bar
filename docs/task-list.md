@@ -163,7 +163,7 @@ Implement a light/dark theme system using next-themes. Create a theme toggle com
 ---
 pr_id: PR-004
 title: Homepage Layout with Game Cards
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 4
