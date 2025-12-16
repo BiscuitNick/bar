@@ -300,7 +300,7 @@ Implement Minesweeper with three difficulty levels (Beginner, Intermediate, Expe
 ---
 pr_id: PR-007
 title: Snake Game Implementation
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 5
