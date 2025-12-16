@@ -83,7 +83,7 @@ Initialize a new Next.js 16 project using create-next-app with TypeScript and Ap
 ---
 pr_id: PR-002
 title: Tailwind CSS 4 and shadcn/ui Setup
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 3
