@@ -18,7 +18,7 @@ estimated_total_minutes: 385
 ---
 pr_id: PR-000
 title: Lemegeton Setup
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 1
@@ -46,7 +46,7 @@ Initialize Lemegeton orchestration configuration for the project. Set up the nec
 ---
 pr_id: PR-001
 title: Next.js 16 Project Scaffolding
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 2
