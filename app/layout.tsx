@@ -14,8 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Retro Games Hub",
-  description: "Classic retro games in your browser",
+  title: {
+    default: "Retro Games Hub",
+    template: "%s | Retro Games Hub",
+  },
+  description: "Play classic retro games like Tetris, Snake, and Minesweeper directly in your browser. Built with Next.js and React.",
+  keywords: ["retro games", "tetris", "snake", "minesweeper", "browser games", "next.js", "react"],
+  authors: [{ name: "Retro Games Hub Team" }],
+  openGraph: {
+    title: "Retro Games Hub",
+    description: "Play classic retro games directly in your browser.",
+    type: "website",
+    siteName: "Retro Games Hub",
+  },
 };
 
 export default function RootLayout({
