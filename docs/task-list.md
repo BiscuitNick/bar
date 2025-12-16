@@ -202,7 +202,7 @@ Build the homepage layout featuring a header with the site title and theme toggl
 ---
 pr_id: PR-005
 title: Tetris Game Implementation
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 7
