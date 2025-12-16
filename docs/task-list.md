@@ -449,7 +449,7 @@ Write tests for Snake game logic including movement, direction changes, food con
 ---
 pr_id: PR-011
 title: Architecture Documentation
-cold_state: new
+cold_state: completed
 priority: low
 complexity:
   score: 3
