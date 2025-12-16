@@ -8,17 +8,14 @@ version: 1.0.0
 total_prs: 12
 estimated_total_minutes: 385
 ```
-
 ---
-
 ## Dependency Block 1: Foundation (Parallel)
 
 ### PR-000: Lemegeton Setup
-
 ---
 pr_id: PR-000
 title: Lemegeton Setup
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 1
@@ -31,18 +28,14 @@ estimated_files:
     action: create
     description: Lemegeton configuration file
 ---
-
 **Description:**
 Initialize Lemegeton orchestration configuration for the project. Set up the necessary config files to enable multi-agent coordination and task tracking.
 
 **Acceptance Criteria:**
 - [ ] Lemegeton config file exists and is valid
 - [ ] Project can be orchestrated via Lemegeton commands
-
 ---
-
 ### PR-001: Next.js 16 Project Scaffolding
-
 ---
 pr_id: PR-001
 title: Next.js 16 Project Scaffolding
@@ -74,7 +67,6 @@ estimated_files:
     action: modify
     description: Add Next.js specific ignores
 ---
-
 **Description:**
 Initialize a new Next.js 16 project using create-next-app with TypeScript and App Router. Configure the project structure according to best practices with the /app directory pattern.
 
@@ -84,13 +76,10 @@ Initialize a new Next.js 16 project using create-next-app with TypeScript and Ap
 - [ ] App Router structure is in place
 - [ ] Development server starts without errors
 - [ ] Build completes successfully
-
 ---
-
 ## Dependency Block 2: Styling & Theming (Sequential from PR-001)
 
 ### PR-002: Tailwind CSS 4 and shadcn/ui Setup
-
 ---
 pr_id: PR-002
 title: Tailwind CSS 4 and shadcn/ui Setup
@@ -122,7 +111,6 @@ estimated_files:
     action: create
     description: shadcn Card component
 ---
-
 **Description:**
 Install and configure Tailwind CSS 4 with the new configuration format. Initialize shadcn/ui and install core components (Button, Card) needed for the homepage and game UIs.
 
@@ -132,11 +120,8 @@ Install and configure Tailwind CSS 4 with the new configuration format. Initiali
 - [ ] Button and Card components are available
 - [ ] CSS custom properties are set up for theming
 - [ ] Styles apply correctly in development
-
 ---
-
 ### PR-003: Light/Dark Theme System
-
 ---
 pr_id: PR-003
 title: Light/Dark Theme System
@@ -162,7 +147,6 @@ estimated_files:
     action: modify
     description: Add dark mode color variables
 ---
-
 **Description:**
 Implement a light/dark theme system using next-themes. Create a theme toggle component and ensure theme preference persists in localStorage. Configure CSS variables for both themes.
 
@@ -172,13 +156,10 @@ Implement a light/dark theme system using next-themes. Create a theme toggle com
 - [ ] Theme persists across page reloads
 - [ ] No flash of unstyled content on load
 - [ ] All shadcn components respect theme
-
 ---
-
 ## Dependency Block 3: Homepage (Sequential from PR-003)
 
 ### PR-004: Homepage Layout with Game Cards
-
 ---
 pr_id: PR-004
 title: Homepage Layout with Game Cards
@@ -204,7 +185,6 @@ estimated_files:
     action: create
     description: Game metadata and constants
 ---
-
 **Description:**
 Build the homepage layout featuring a header with the site title and theme toggle, and a responsive grid of game cards. Each card displays the game name, a brief description, and links to the game page.
 
@@ -215,13 +195,10 @@ Build the homepage layout featuring a header with the site title and theme toggl
 - [ ] Cards link to /games/[game-name] routes
 - [ ] Layout adapts to different screen sizes
 - [ ] Hover states provide visual feedback
-
 ---
-
 ## Dependency Block 4: Games (Parallel, depend on PR-004)
 
 ### PR-005: Tetris Game Implementation
-
 ---
 pr_id: PR-005
 title: Tetris Game Implementation
@@ -256,7 +233,6 @@ estimated_files:
     action: create
     description: Game state management hook
 ---
-
 **Description:**
 Implement a fully playable Tetris game with all seven tetromino pieces, rotation system (SRS or simple), line clearing, scoring, and game over detection. Include next piece preview and pause functionality.
 
@@ -271,11 +247,8 @@ Implement a fully playable Tetris game with all seven tetromino pieces, rotation
 - [ ] Next piece preview displays
 - [ ] Game over triggers when pieces reach top
 - [ ] High score saves to localStorage
-
 ---
-
 ### PR-006: Minesweeper Game Implementation
-
 ---
 pr_id: PR-006
 title: Minesweeper Game Implementation
@@ -307,7 +280,6 @@ estimated_files:
     action: create
     description: Game state management hook
 ---
-
 **Description:**
 Implement Minesweeper with three difficulty levels (Beginner, Intermediate, Expert). Include first-click safety guarantee, recursive cell revealing, flagging system, timer, and win/lose detection.
 
@@ -323,11 +295,8 @@ Implement Minesweeper with three difficulty levels (Beginner, Intermediate, Expe
 - [ ] Mine counter shows remaining flags
 - [ ] Win detected when all non-mines revealed
 - [ ] Loss reveals all mines
-
 ---
-
 ### PR-007: Snake Game Implementation
-
 ---
 pr_id: PR-007
 title: Snake Game Implementation
@@ -356,7 +325,6 @@ estimated_files:
     action: create
     description: Game state management hook
 ---
-
 **Description:**
 Implement the classic Snake game with smooth movement, food spawning, collision detection, and progressive speed increase. Include score tracking and pause functionality.
 
@@ -372,13 +340,10 @@ Implement the classic Snake game with smooth movement, food spawning, collision 
 - [ ] Self-collision ends game
 - [ ] High score saves to localStorage
 - [ ] Pause/resume with spacebar or P key
-
 ---
-
 ## Dependency Block 5: Testing (Depends on game implementations)
 
 ### PR-008: Tetris Game Tests
-
 ---
 pr_id: PR-008
 title: Tetris Game Tests
@@ -401,7 +366,6 @@ estimated_files:
     action: create
     description: Component tests for Tetris board
 ---
-
 **Description:**
 Write comprehensive tests for Tetris game logic including piece rotation, collision detection, line clearing, and scoring. Include component tests for the game board rendering.
 
@@ -413,11 +377,8 @@ Write comprehensive tests for Tetris game logic including piece rotation, collis
 - [ ] Tests for game over detection
 - [ ] Component renders correctly
 - [ ] All tests pass
-
 ---
-
 ### PR-009: Minesweeper Game Tests
-
 ---
 pr_id: PR-009
 title: Minesweeper Game Tests
@@ -437,7 +398,6 @@ estimated_files:
     action: create
     description: Component tests for Minesweeper board
 ---
-
 **Description:**
 Write tests for Minesweeper game logic including board generation, mine placement, adjacent count calculation, recursive reveal, and win/lose conditions.
 
@@ -449,11 +409,8 @@ Write tests for Minesweeper game logic including board generation, mine placemen
 - [ ] Tests for flag toggling
 - [ ] Tests for win/lose detection
 - [ ] All tests pass
-
 ---
-
 ### PR-010: Snake Game Tests
-
 ---
 pr_id: PR-010
 title: Snake Game Tests
@@ -473,7 +430,6 @@ estimated_files:
     action: create
     description: Component tests for Snake board
 ---
-
 **Description:**
 Write tests for Snake game logic including movement, direction changes, food consumption, growth mechanics, and collision detection.
 
@@ -486,13 +442,10 @@ Write tests for Snake game logic including movement, direction changes, food con
 - [ ] Tests for self-collision
 - [ ] Tests for speed progression
 - [ ] All tests pass
-
 ---
-
 ## Dependency Block 6: Documentation (Final)
 
 ### PR-011: Architecture Documentation
-
 ---
 pr_id: PR-011
 title: Architecture Documentation
@@ -512,7 +465,6 @@ estimated_files:
     action: modify
     description: Project readme with setup instructions
 ---
-
 **Description:**
 Document the project architecture including component structure, game logic patterns, state management approach, and theming system. Update README with setup and development instructions.
 
@@ -524,11 +476,8 @@ Document the project architecture including component structure, game logic patt
 - [ ] README includes setup instructions
 - [ ] README includes development commands
 - [ ] README includes deployment guidance
-
 ---
-
 ### PR-012: Final Integration and Polish
-
 ---
 pr_id: PR-012
 title: Final Integration and Polish
@@ -551,7 +500,6 @@ estimated_files:
     action: create
     description: Shared game header component
 ---
-
 **Description:**
 Final integration pass to ensure all games work together, consistent styling across components, proper navigation between pages, and SEO metadata. Polish any rough edges found during integration.
 
