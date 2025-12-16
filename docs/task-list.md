@@ -252,7 +252,7 @@ Implement a fully playable Tetris game with all seven tetromino pieces, rotation
 ---
 pr_id: PR-006
 title: Minesweeper Game Implementation
-cold_state: new
+cold_state: completed
 priority: high
 complexity:
   score: 6
